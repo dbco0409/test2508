@@ -7,7 +7,7 @@ $goal = $input['goal'] ?? '';
 $habit = $input['habit'] ?? '';
 
 // OpenAI API 설정
-$apiKey = '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';
+$apiKey = '';
 $url = 'https://api.openai.com/v1/chat/completions';
 
 $data = [

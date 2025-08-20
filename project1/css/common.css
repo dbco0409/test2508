@@ -119,7 +119,9 @@ select, input{height:40px; }
 #header .wrap .logo a span{display:inline-block; font-size:2.25rem;}
 #header .wrap .logo a span{color:var(--logo-red);}
 #header .wrap .menu a{display: inline-block;padding: 8px;font-size: 1rem;font-weight: 500;line-height: 1.4em; font-family: 'Noto Sans KR', sans-serif; color:#fff;}
+#header .wrap .menu a:hover{text-shadow:3px 3px 10px #fff; }
 #header .wrap .menu.white-menu a{color:#fff; }
+#header .wrap .menu.white-menu a:hover{color:var(--logo-red) }
 #header .wrap .menu.black-menu a{color:#000; }
 
 

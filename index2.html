@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이유채의 Vue 프로젝트방</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+<header>
+    <div class="inner">
+        <h1><a href="https://theresebelivet.mycafe24.com/" target="_blank">이유채</a></h1>
+        <nav id="menu">
+        <a href="https://dbco0409.github.io/html2507/" class="css"><i class="fa-brands fa-css"></i> CSS</a>
+        <a href="https://dbco0409.github.io/js2507/" class="js"><i class="fa-brands fa-js"></i> JS</a>
+        <a href="https://dbco0409.github.io/test2508/" class="test"><i class="fa-solid fa-signature"></i> Test</a>
+        <a href="https://dbco0409.github.io/react-site/" class="react"><i class="fa-brands fa-react"></i> React</a>
+        <a href="https://dbco0409.github.io/react-test2508/" class="react"><i class="fa-brands fa-react"></i> React_Test</a>
+        <a href="https://dbco0409.github.io/test2508/index2.html" class="vue active"><i class="fa-brands fa-vuejs"></i> Vue</a>
+        </nav>
+    </div>
+</header>
+<section id="main02">
+    <div class="nav">
+        <table>
+            <col width="160"/>
+            <col/>
+            </colgroup>
+            <tr>
+                <th>VUE 1</th>
+                <td><a href="./work/vue08525/index.html" class="dynamic-link">W3Schools - VUE</a></td>
+                <td class="date">25-08-25</td>
+            </tr>
+        </table>
+    </div>
+</section>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll('.dynamic-link');
+
+    links.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const currentTr = this.closest('tr');
+            const table = currentTr.closest('table');
+            const existingIframeRow = currentTr.nextElementSibling;
+
+            // 이미 열려 있는 iframe이 바로 아래에 있다면 → 닫기 (토글)
+            if (existingIframeRow && existingIframeRow.classList.contains('iframe-row')) {
+                existingIframeRow.remove();
+                return; // 종료
+            }
+
+            // 다른 열린 iframe-row가 있다면 닫기
+            const allIframeRows = table.querySelectorAll('tr.iframe-row');
+            allIframeRows.forEach(row => row.remove());
+
+            // 새로운 iframe row 생성
+            const newTr = document.createElement('tr');
+            newTr.classList.add('iframe-row');
+
+            const iframeTd = document.createElement('td');
+            iframeTd.colSpan = 3;
+            iframeTd.innerHTML = `
+                <iframe src="${this.href}" width="100%" height="400" style="border:1px solid #ccc;"></iframe>
+            `;
+
+            newTr.appendChild(iframeTd);
+            currentTr.parentNode.insertBefore(newTr, currentTr.nextSibling);
+        });
+    });
+});
+</script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마음톡톡AI</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/commons.js"></script>
+    <script src="./js/center.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner">
+                <div class="logo">
+                    <a href="index.html">마음톡톡AI<i class="fa-solid fa-heart"></i></a>
+                </div>
+                <button type="button" class="menuBtn" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </header>
+        <aside class="menu" id="menu">
+            <div class="bg"></div>
+            <div class="menuwrap">
+                <button type="button" class="closeBtn" id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+                <ul class="inner">
+                    <li><a href="#">AI상담</a></li>
+                    <li><a href="#">자가진단</a></li>
+                    <li><a href="#">전화상담 안내</a></li>
+                    <li><a href="#">정신건강센터 안내</a></li>
+                </ul>
+            </div>
+        </aside>
+        <section id="emergency">
+           <div class="inner">
+                <div class="tit">
+                    <h3>정신건강센터 안내</h3>
+                    <ul>
+                        <li><strong><span>자살예방 상담전화</span> - ☎ 1393</strong></li>
+                        <li><span>정신건강 위기상담전화</span> - ☎ 1577‑0199</li>
+                    </ul>
+                    <button class="./tel.html">지역별 상담 안내</button>
+                </div>
+                <div class="emerSearch">
+                    <div class="emer_addr">
+                        <h4>지역별로 검색</h4>
+                        <div class="search">
+                            <select id="sido" name="sido" onchange="sido_change()">
+                                <option value="">시도를 선택해주세요.</option>
+                                <option value="11">서울특별시</option>
+                                <option value="26">부산광역시</option>
+                                <option value="27">대구광역시</option>
+                                <option value="28">인천광역시</option>
+                                <option value="29">광주광역시</option>
+                                <option value="30">대전광역시</option>
+                                <option value="31">울산광역시</option>
+                                <option value="36">세종특별자치시</option>
+                                <option value="41">경기도</option>
+                                <option value="43">충청북도</option>
+                                <option value="44">충청남도</option>
+                                <option value="46">전라남도</option>
+                                <option value="47">경상북도</option>
+                                <option value="48">경상남도</option>
+                                <option value="50">제주특별자치도</option>
+                                <option value="52">전라북도</option>
+                            </select>
+                            <select name="sigungu" id="sigungu">
+                                <option>시/도를 선택해주세요.</option>
+                            </select>
+                            <button type="button" class="btn" onclick="searchCenter(1)">검색</button>
+                        </div>
+                    </div>
+                    <div class="emer_addr emer_map">
+                        <h4>가까운 센터 검색<br/>(위치정보 제공 동의 필수)</h4>
+                        <div class="search_map">
+                            <button type="button" class="btn" onclick="searchCenter(2)">내 주변 검색</button>
+                        </div>
+                    </div>
+                </div>
+           </div>
+            <div class="emerContents">
+                <div class="inner">
+                    <div class="col-em">
+                        <div class="stit">
+                            <h5>8.0km</h5>
+                            <h2>순천향대학교 부속 서울병원</h2>
+                            <p class="time"><span class="open">운영중</span> 매주 토요일, 매주 일요일, 공휴일 휴무</p>
+                            <p>서울특별시 용산구 대사관로 59 (한남동)<br/>02-709-9117</p>
+                        </div>
+                        <div class="btns">
+                            <button onclick="window.open('')" class="naverbtn">지도보기 <i class="fa-solid fa-location-dot"></i></button>
+                            <button onclick="window.open('tel:')" class="telbtn">전화걸기 <i class="fa-solid fa-phone"></i></button>
+                        </div>
+                    </div>
+                     <div class="col-em">
+                        <div class="stit">
+                            <h5>8.0km</h5>
+                            <h2>순천향대학교 부속 서울병원</h2>
+                            <p class="time"><span class="end">운영종료</span> 토, 일, 공휴일 휴무</p>
+                            <p>서울특별시 용산구 대사관로 59 (한남동)<br/>02-709-9117</p>
+                        </div>
+                        <div class="btns">
+                            <button onclick="window.open('')" class="naverbtn">지도보기 <i class="fa-solid fa-location-dot"></i></button>
+                            <button onclick="window.open('tel:')" class="telbtn">전화걸기 <i class="fa-solid fa-phone"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
+

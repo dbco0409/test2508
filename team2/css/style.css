@@ -1,0 +1,47 @@
+@charset "utf-8";
+@import url("./common.css");
+
+#emergency{padding-top:90px;}
+#emergency .inner{width:90%; margin:auto; }
+#emergency .tit{margin-bottom:50px; }
+#emergency .tit h3{font-size:24px; font-weight:600; color:#000; margin-bottom:15px; }
+#emergency .tit ul{margin-bottom:10px;}
+#emergency .tit li{font-size:16px; line-height:1.5em; font-weight:400; }
+#emergency .tit li strong {color:var(--logo-orange)}
+#emergency .tit button{background:#eee; border:0; padding:5px 10px; }
+
+#emergency .emerSearch .emer_addr{margin-bottom:20px; }
+#emergency .emerSearch .emer_addr h4{font-size:18px; font-weight:500; }
+#emergency .emerSearch .emer_addr .search{margin-top:15px; display:flex; flex-wrap: nowrap; justify-content: space-between;}
+#emergency .emerSearch .emer_addr .search select{width:78%; border:1px solid #ccc;}
+#emergency .emerSearch .emer_addr .search button{width:20%; background:#eee; color:#000; }
+#emergency .emerSearch .emer_map {display:flex; justify-content: space-between; align-items: center;}
+#emergency .emerSearch .emer_map .search_map {width:40%}
+#emergency .emerSearch .emer_map .search_map button{width:100%; background:#eee; color:#000;}
+
+.emerContents{border-top:10px solid #eee; }
+.emerContents .col-em{padding:30px 0; border-bottom:1px dashed #ccc; }
+.emerContents .col-em .stit{margin-bottom:20px; }
+.emerContents .col-em .stit h5{color:var(--logo-orange); font-weight:600; }
+.emerContents .col-em .stit h2{font-size:24px; color:#000; font-weight:600; }
+.emerContents .col-em .stit p.time{margin-bottom:10px; }
+.emerContents .col-em .stit p span{display:inline-block;  }
+.emerContents .col-em .stit p span::after{content:'|'; color:#ccc; font-size:14px; padding:0 15px; display:inline-block; transform: translateY(-2px);}
+.emerContents .col-em .stit p .open{color:#000; font-weight:600;}
+.emerContents .col-em .stit p .end{color:#ccc;}
+.emerContents .col-em .stit p{font-size:16px; line-height:24px; color:#000; }
+.emerContents .col-em .btns{display:flex; justify-content: space-between; align-items: center;}
+.emerContents .col-em .btns button{width:49%; height:40px; }
+.emerContents .col-em .btns .naverbtn{color:#fff; background:var(--logo-orange)}
+.emerContents .col-em .btns .telbtn{background:#ccc; color:#fff; }
+
+
+
+
+
+
+
+
+
+
+

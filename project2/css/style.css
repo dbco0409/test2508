@@ -53,8 +53,8 @@
 
 #sub_body .content{display: flex; width:calc(100% - 380px); padding-top:30px; flex-wrap: wrap; justify-content: space-between;}
 #sub_body .content .box{width:335px; border-radius:0 10px 0 0; margin-bottom:40px; overflow:hidden; }
-#sub_body .content .box img{max-width:100%; }
-#sub_body .content .box .info{padding: 20px 25px; background: #f8f8f8;}
+#sub_body .content .box img{max-width:100%; cursor:pointer }
+#sub_body .content .box .info{padding: 20px 25px; background: #f8f8f8; cursor:pointer }
 #sub_body .content .box .info h5{font-size: 14px;font-weight: 500;line-height: 1.2em;letter-spacing: -0.04em;color: #a8a8a8;margin-bottom: 10px;display: block; font-family: 'Noto Sans KR', sans-serif;}
 #sub_body .content .box .info h2{font-size: 22px; min-height: 80px; font-weight: 700; line-height: 1.2em; letter-spacing: -0.04em; color: #2c2c2c; margin-bottom: 14px; word-break:keep-all}
 #sub_body .content .box .info h1{ font-size: 24px; font-weight: 400; line-height: 1.2em; letter-spacing: -0.04em; margin:0; color: #2c2c2c; }
@@ -87,3 +87,5 @@
 .news .inner .col .right .subj{font-size:25px; margin-bottom:14px; font-weight:700; word-break: keep-all; font-family: 'Noto Sans KR', sans-serif;}
 .news .inner .col .right .subj a{color:#222; }
 .news .inner .col .right p{font-size:16px; width:80%; font-family: 'Noto Sans KR', sans-serif;}
+
+#sub_car{margin-top:130px;}
